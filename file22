@@ -1,0 +1,10 @@
+123
+two
+three
+c:wq
+[A[A[B[B[B[B[B[B[B[B[B[B[B[B[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[C[Cdeploy adapters: [tomcat9(credentialsId: 'new-credentials', path: '', url: 'http://13.235.90.142:8080')], contextPath: 'prodapp5', war: '**/*.war'
+
+:wq
+
+
+
