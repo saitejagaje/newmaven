@@ -1,4 +1,4 @@
-node('built-in')  {
+node('slave')  {
     stage('continous download'){
         git 'https://github.com/IntelliqDevops/maven.git'
     }
@@ -6,7 +6,7 @@ node('built-in')  {
         sh 'mvn package'
     }
     stage('continous deploy'){
-       deploy adapters: [tomcat9(credentialsId: 'new-credentials1', path: '', url: 'http://172.31.82.28:8080')], contextPath: 'testapp', war: '**/*.war'
+       deploy adapters: [tomcat9(credentialsId: 'new-credentials1', path: '', url: 'http://172.31.82.28:8080')], contextPath: 'testapp1', war: '**/*.war'
     }
      stage('continous testing'){
         git 'https://github.com/IntelliqDevops/FunctionalTesting.git'
